@@ -1,0 +1,91 @@
+/* style2.css */
+body {
+    background-color: #f0f0f0; /* Light grey background */
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    margin: 0; /* Remove default margin */
+}
+
+.container {
+    background-color: #fff; /* White background for the form container */
+    padding: 30px; /* Increased padding */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2); /* Softer shadow for the container */
+    width: 400px; /* Fixed width for the form */
+    max-height: 90vh; /* Maximum height to prevent overflow */
+    overflow-y: auto; /* Enable vertical scrolling if needed */
+    text-align: center; /* Center text inside the container */
+    border: 1px solid #ddd; /* Light grey border around the container */
+}
+
+h2 {
+    color: #007bff; /* Bootstrap blue color for the heading */
+    margin-bottom: 20px; /* Space below the heading */
+    font-size: 24px; /* Increased font size */
+}
+
+label {
+    display: block; /* Block display for labels */
+    margin-bottom: 5px; /* Space below the labels */
+    text-align: left; /* Left align labels */
+    font-weight: bold; /* Bold labels */
+}
+
+input[type="text"],
+input[type="email"],
+input[type="password"],
+textarea,
+input[type="file"] {
+    width: calc(100% - 20px); /* Full width minus padding */
+    padding: 12px; /* Increased padding inside input */
+    margin: 10px 0; /* Space around input */
+    border: 1px solid #ccc; /* Light grey border for inputs */
+    border-radius: 5px; /* Rounded corners for inputs */
+    box-sizing: border-box; /* Include padding and border in element's total width and height */
+    transition: border-color 0.3s; /* Smooth transition for border color */
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="password"]:focus,
+textarea:focus {
+    border-color: #007bff; /* Change border color on focus */
+    outline: none; /* Remove default outline */
+}
+
+input[type="submit"] {
+    background-color: #007bff; /* Bootstrap blue button */
+    color: #fff; /* White button text */
+    border: none; /* No border for button */
+    padding: 12px; /* Increased padding inside button */
+    border-radius: 5px; /* Rounded corners for button */
+    cursor: pointer; /* Pointer cursor on hover */
+    width: 100%; /* Full width for the button */
+    transition: background-color 0.3s, transform 0.3s; /* Smooth transition for hover */
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+    transform: translateY(-2px); /* Slightly lift the button on hover */
+}
+
+textarea {
+    resize: vertical; /* Allow vertical resizing */
+    height: 80px; /* Fixed height for textareas */
+}
+
+p {
+    margin-top: 15px; /* Space above the paragraph */
+}
+
+a {
+    color: #007bff; /* Bootstrap blue link color */
+    text-decoration: none; /* No underline */
+}
+
+a:hover {
+    text-decoration: underline; /* Underline on hover */
+}

@@ -1,0 +1,115 @@
+/* style4.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    overflow: auto; /* Allows scrolling if content exceeds window size */
+}
+
+.container {
+    background: #fff;
+    border-radius: 8px;
+    padding: 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    max-width: 600px; /* Set max width for larger screens */
+    width: 100%;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+h2 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px; /* Added margin for spacing */
+}
+
+form {
+    display: grid; /* Use grid for two-column layout */
+    grid-template-columns: repeat(2, 1fr); /* Two equal columns */
+    gap: 10px; /* Spacing between fields */
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px; /* Reduced margin for compactness */
+}
+
+input[type="text"],
+input[type="number"],
+textarea,
+select {
+    width: 100%; /* Full width within grid item */
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    transition: border 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus,
+textarea:focus,
+select:focus {
+    border: 1px solid #007BFF;
+    outline: none;
+}
+
+input[type="file"] {
+    grid-column: span 2; /* Full width for file input */
+    margin-bottom: 16px;
+}
+
+input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    padding: 10px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.2s;
+    width: 100%; /* Full width */
+    grid-column: span 2; /* Full width for submit button */
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive design */
+@media (max-width: 600px) {
+    .container {
+        padding: 15px;
+    }
+
+    form {
+        grid-template-columns: 1fr; /* Stack fields on smaller screens */
+    }
+
+    input[type="text"],
+    input[type="number"],
+    textarea,
+    select {
+        padding: 6px;
+    }
+
+    input[type="submit"] {
+        padding: 8px;
+    }
+}
