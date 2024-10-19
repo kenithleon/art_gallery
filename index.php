@@ -48,7 +48,7 @@ include('includes/dbconnection.php');
                            <div class="slider-info ">
                               <h5>Pick The Best Art For <br>Your Choice</h5>
                               <div class="bottom-info">
-                                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo ligula eget dolorL orem ipsum dolor sit amet eget dolor</p>
+                                 <p>Empowering Creativity, Curating Excellence: Manage, Showcase, and Inspire Art with Ease.</p>
                               </div>
                               <div class="outs_more-buttn">
                                  <a href="about.php">Read More</a>
@@ -63,7 +63,7 @@ include('includes/dbconnection.php');
                            <div class="slider-info ">
                               <h5>Sort Art And Painting<br>For Your Choice</h5>
                               <div class="bottom-info">
-                                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo ligula eget dolorL orem ipsum dolor sit amet eget dolor</p>
+                                 <p>Empowering Creativity, Curating Excellence: Manage, Showcase, and Inspire Art with Ease.</p>
                               </div>
                               <div class="outs_more-buttn">
                                  <a href="about.php">Read More</a>
@@ -78,7 +78,7 @@ include('includes/dbconnection.php');
                            <div class="slider-info">
                               <h5>Best Art And Painting<br> For Your Choice</h5>
                               <div class="bottom-info">
-                                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit.Aenean commodo ligula eget dolorL orem ipsum dolor sit amet eget dolor</p>
+                                 <p>Empowering Creativity, Curating Excellence: Manage, Showcase, and Inspire Art with Ease.</p>
                               </div>
                               <div class="outs_more-buttn">
                                  <a href="about.php">Read More</a>
@@ -160,7 +160,7 @@ while ($row=mysqli_fetch_array($ret)) {
                   <li>
                    
                      <div class="agileinfo_port_grid">
-                        <img src="admin/images/<?php echo $row['Image'];?>" width="300" height="300" alt=" " class="img-fluid" />
+                        <img src="images/<?php echo $row['Image'];?>" width="300" height="300" alt=" " class="img-fluid" />
                         <div class="banner-right-icon">
                            <h4 class="pt-3"><?php echo $row['typename'];?></h4>
                         </div>
