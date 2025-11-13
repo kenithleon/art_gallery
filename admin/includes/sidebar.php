@@ -21,6 +21,17 @@
              
             </ul>
           </li>
+          <li class="sub-menu">
+            <a href="javascript:;" class="">
+                          <i class="icon_document_alt"></i>
+                          <span>Users</span>
+                          <span class="menu-arrow arrow_carrot-right"></span>
+                      </a>
+            <ul class="sub">
+              <li><a class="" href="view-user.php">View User</a></li>
+              <!-- <li><a class="" href="manage-art-type.php">Manage Type</a></li> -->
+            </ul>
+          </li>
                 <li class="sub-menu">
             <a href="javascript:;" class="">
                           <i class="icon_document_alt"></i>

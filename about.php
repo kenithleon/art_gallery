@@ -79,22 +79,19 @@ while ($row=mysqli_fetch_array($ret)) {
                   <div class="col-lg-4 col-md-4 abut-gride">
                      <span class="fas fa-truck"></span>
                      <h5>Shipping</h5>
-                     <p class="mt-3"> velit sagittis vehicula. Duis posuere 
-                        ex in mollis iaculis. Suspendisse tincidunt
+                     <p class="mt-3"> We ensure fast and secure shipping to get your favorite artwork delivered right to your doorstep, no matter where you are
                      </p>
                   </div>
                   <div class="col-lg-4 col-md-4 abut-gride">
                      <span class="fas fa-phone-volume"></span>  
                      <h5>Support</h5>
-                     <p class="mt-3"> velit sagittis vehicula. Duis posuere 
-                        ex in mollis iaculis. Suspendisse tincidunt
+                     <p class="mt-3"> Our dedicated support team is here to assist you with any inquiries or issues. Feel free to reach out for help anytime!
                      </p>
                   </div>
                   <div class="col-lg-4 col-md-4 abut-gride">
                      <span class="fas fa-undo"></span>
                      <h5> Return</h5>
-                     <p class="mt-3"> velit sagittis vehicula. Duis posuere 
-                        ex in mollis iaculis. Suspendisse tincidunt
+                     <p class="mt-3"> We offer hassle-free returns to ensure your satisfaction. If you're not completely happy with your purchase, we’re here to help
                      </p>
                   </div>
                </div>

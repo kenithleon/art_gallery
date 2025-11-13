@@ -185,14 +185,14 @@ nav.navbar.navbar-expand-lg.navbar-light{
     padding: 1em 0em;
 }
 .navbar-light .navbar-nav .nav-link:focus, .navbar-light .navbar-nav .nav-link:hover {
-     color:#ff3b9f;
+     color:#2839ba;
 
 }
 .navbar-light .navbar-nav .active>.nav-link,
 .navbar-light .navbar-nav .nav-link.active, 
 .navbar-light .navbar-nav .nav-link.open, 
 .navbar-light .navbar-nav .open>.nav-link {
-    color:#ff3b9f;
+    color:#2a15a3;
 
 }
 /*-- //nav --*/
@@ -215,7 +215,7 @@ h5#exampleModalLabel{
 }
 /*--//model--*/
 /*-- banner --*/ 
-.one-img{  background: url('../images/b1.jpg') no-repeat center;}
+.one-img{  background: #0e0797 url('../images/b1.jpg') no-repeat center;}
 .two-img{  background: url('../images/b2.jpg') no-repeat center;}
 .three-img{  background: url('../images/b3.jpg') no-repeat center;} 
 .slider-img{  background-size: cover;
@@ -384,7 +384,7 @@ padding: 23em 0 0;
 }
 .outs_more-buttn a:hover{
     background: none;
-    border: 2px double #ea1d5d;
+    border: 2px double #0a0887;
     color: #fff;
 }
 .callbacks_nav {
@@ -399,7 +399,7 @@ overflow: hidden;
 text-decoration: none;
 height: 53px;
 width: 53px;
-background:rgba(230, 230, 230, 0) url("../images/left-arrow.png") no-repeat left top;
+background:rgba(230, 230, 230, 0) url('../images/left-arrow.png') no-repeat left top;
 margin-top: -45px;
 }
 .callbacks_nav:active {
@@ -407,7 +407,7 @@ opacity: 1.0;
 }
 .callbacks_nav.next {
 left: auto;
-background:rgba(230, 230, 230, 0)  url("../images/right-arrow.png") no-repeat 0px 0px;
+background:rgba(230, 230, 230, 0)  url('../images/right-arrow.png') no-repeat 0px 0px;
 background-position: right top;
 right: 0;
 }
@@ -503,13 +503,13 @@ font-size: 14px;
 .using-border {
      width: 100%; 
     border: none; 
-    background:#ea1d5d;
+    background: #1d88ea;
     text-align: center;
 }
 /*-- //inner-banner --*/ 
 /*--blog--*/
 .blog,.premium,.sub-below-address{
-    background:#26bb48;
+    background:#9db3a2;
 }
 /*--//blog--*/
 /*-- about-- */
@@ -524,7 +524,7 @@ font-size: 14px;
 .about-toys-off span {
     font-style: italic;
     font-weight: 200;
-    color: #ea1d5d;
+    color: #1f13a3;
 }
 .toys-grids-upper {
     background: #000;
@@ -547,11 +547,11 @@ font-size: 14px;
 	font-size: 32px;
 	margin-bottom: 25px;
     text-transform: uppercase;
-	color:#ea1d5d;}
+	color:#2a1a85;}
 	.abut-gride span {
     font-size: 30px;
-    background: #26bb48;
-    color: #ffcb2d;
+    background: #9e9eb9;
+    color: #393880;
     width: 67px;
     height: 67px;
     line-height: 72px;
@@ -749,7 +749,7 @@ color:#000;}
 .news-agile-text span {
     font-size: 20px;
     margin: 0px 9px;
-    color: #ea1d5d;
+    color: #1c1963;
 }
 /*--//customer-review-- */
 /*--Premium-- */
@@ -768,7 +768,7 @@ color:#000;}
 /*--//Premium-- */
 .img-toy-w3l-top{background: url('../images/cc1.jpg')no-repeat center;
     background-size: cover;
-    -webkit-background-size: cover;
+    -webkit-background-size: contain;
     -moz-background-size: cover;
     -o-background-size: cover;
     -ms-background-size: cover;
@@ -802,7 +802,7 @@ height:816px;}
 }
 .address-gried span{ 
 font-size:30px;
-color:#ea1d5d;
+color:#0a0887;
     margin-bottom: 10px;
 	}
 
@@ -832,7 +832,7 @@ color:#ea1d5d;
     line-height: 35px;
     text-align: center;
     margin: 0px 5px;
-    color:#ea1d5d;
+    color:#0a0887;
     transition: 0.5s all;
     -webkit-transition: 0.5s all;
     transition: 0.5s all;
@@ -853,7 +853,7 @@ color:#ea1d5d;
     font-size: 15px;
 }
 .footer-social li a:hover {
-    color:#ffcb2d;
+    color:#b5a985;
 }
 
 /*--//social-icons--*/
@@ -877,7 +877,7 @@ h3.typo-main-heading {
     letter-spacing: 2px;
     border-bottom: 2px solid #e2e1e1;
     display: inline-block;
-    color:#ea1d5d;
+    color: #0a0887;
 }
 h4.typo-sub-heading {
 	color: #000;
@@ -932,7 +932,7 @@ footer{background:#000;}
 	color:#fff;
 }
 .copy-agile-right p a {
-    color:#ea1d5d;
+    color:#0a0887;
 }
 .copy-agile-right p a:hover{color:#fff;}
 /* --footer-- */
@@ -1159,7 +1159,7 @@ padding: 12px 15px;
 }
 .navbar-light .navbar-toggler {
 border-color:#fff;
-background:#ea1d5d;
+background:#0a0887;
 padding: 2px 6px;
 margin-top: 0px;
 outline: none;

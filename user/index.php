@@ -7,13 +7,6 @@ include('includes/dbconnection.php');
 if(isset($_SESSION['user_id'])) {
    $userid = $_SESSION['user_id'];
    $username = $_SESSION['user_name'];
-
-   // Optionally, fetch user data from the database to ensure data consistency
-   /*
-   $query = mysqli_query($con, "SELECT user_name FROM tbuser WHERE user_id='$userid'");
-   $result = mysqli_fetch_array($query);
-   $username = $result['user_name'];
-   */
 }
 ?>
 <!DOCTYPE html>
@@ -35,28 +28,20 @@ if(isset($_SESSION['user_id'])) {
          window.scrollTo(0, 1);
       }
    </script>
-   <!--//meta tags ends here-->
-   <!--bootstrap-->
+
+   <!-- Meta tags, CSS, and Fonts -->
    <link href="css/bootstrap.min.css" rel="stylesheet" type="text/css" media="all">
-   <!--//bootstrap end-->
-   <!-- font-awesome icons -->
    <link href="css/fontawesome-all.min.css" rel="stylesheet" type="text/css" media="all">
-   <!-- //font-awesome icons -->
-   <!-- For Clients slider -->
    <link rel="stylesheet" href="css/flexslider.css" type="text/css" media="all" />
-   <!--flexs slider-->
    <link href="css/JiSlider.css" rel="stylesheet">
-   <!--Shopping cart-->
    <link rel="stylesheet" href="css/shop.css" type="text/css" />
-   <!--//Shopping cart-->
-   <!--stylesheets-->
-   <link href="css/style.css" rel='stylesheet' type='text/css' media="all">
-   <!--//stylesheets-->
+   <link href="css/style.css" rel="stylesheet" type="text/css" media="all">
    <link href="//fonts.googleapis.com/css?family=Sunflower:500,700" rel="stylesheet">
    <link href="//fonts.googleapis.com/css?family=Open+Sans:400,600,700" rel="stylesheet">
 </head>
 <body>
    <?php include_once('includes/header.php'); ?>
+
    <div class="slider text-center">
       <div class="callbacks_container">
          <ul class="rslides" id="slider4">
@@ -68,9 +53,6 @@ if(isset($_SESSION['user_id'])) {
                         <div class="bottom-info">
                            <p>Empowering Creativity, Curating Excellence: Manage, Showcase, and Inspire Art with Ease.</p>
                         </div>
-                        <!-- <div class="outs_more-buttn">
-                           <a href="about.php">Read More</a>
-                        </div> -->
                      </div>
                   </div>
                </div>
@@ -83,9 +65,6 @@ if(isset($_SESSION['user_id'])) {
                         <div class="bottom-info">
                            <p>Empowering Creativity, Curating Excellence: Manage, Showcase, and Inspire Art with Ease.</p>
                         </div>
-                        <!-- <div class="outs_more-buttn">
-                           <a href="about.php">Read More</a>
-                        </div> -->
                      </div>
                   </div>
                </div>
@@ -98,9 +77,6 @@ if(isset($_SESSION['user_id'])) {
                         <div class="bottom-info">
                            <p>Empowering Creativity, Curating Excellence: Manage, Showcase, and Inspire Art with Ease.</p>
                         </div>
-                        <!-- <div class="outs_more-buttn">
-                           <a href="about.php">Read More</a>
-                        </div> -->
                      </div>
                   </div>
                </div>
@@ -109,81 +85,15 @@ if(isset($_SESSION['user_id'])) {
       </div>
       <div class="clearfix"></div>
    </div>
-   <!-- about -->
-   <!-- <section class="about py-lg-4 py-md-3 py-sm-3 py-3" id="about">
-      <div class="container py-lg-5 py-md-5 py-sm-4 py-4">
-         <h3 class="title text-center mb-lg-5 mb-md-4  mb-sm-4 mb-3">Best Products</h3>
-         <div class="row banner-below-w3l">
-            <!- Product Categories -->
-            <!-- <div class="col-lg-4 col-md-6 col-sm-6 text-center banner-agile-flowers">
-               <img src="../user/a1.jpg" width="200" height="200" class="img-thumbnail" alt="">
-               <div class="banner-right-icon">
-                  <h4 class="pt-3">Sculptures</h4>
-               </div>
-            </div> -->
-            <!-- Repeat similar blocks for other product categories -->
-            <!-- ... -->
-            <!-- <div class="toys-grids-upper">
-               <div class="about-toys-off">
-                  <h2>Get Up to <span>70% Off </span>On Selected Art</h2>
-               </div>
-            </div>
-         </div>
-      </div>
-   </section> --> 
-   <!-- //about -->
-   <!-- New Arrivals -->
-   <!-- <section class="blog py-lg-4 py-md-3 py-sm-3 py-3">
-      <div class="container py-lg-5 py-md-4 py-sm-4 py-3">
-         <h3 class="title clr text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3">New Arrivals</h3>
-         <div class="slid-img">
-            <ul id="flexiselDemo1">
-                <?php
-               $ret = mysqli_query($con, "SELECT tblarttype.ID as atid, tblarttype.ArtType as typename, tblartproduct.ID as apid, tblartproduct.Title, tblartproduct.Image, tblartproduct.ArtType FROM tblartproduct JOIN tblarttype ON tblarttype.ID=tblartproduct.ArtType");
-               while ($row = mysqli_fetch_array($ret)) {
-               ?> 
-               <li>
-                  <div class="agileinfo_port_grid">
-                     <img src="../images/<?php echo $row['Image']; ?>" width="300" height="300" alt=" " class="img-fluid" />
-                     <div class="banner-right-icon">
-                        <h4 class="pt-3"><?php echo $row['typename']; ?></h4>
-                     </div>
-                     <div class="outs_more-buttn">
-                        <a href="art-enquiry.php?eid=<?php echo $row['apid']; ?>">Enquiry</a>
-                     </div>
-                  </div>
-               </li>
-               <?php } ?>
-            </ul>
-         </div>
-      </div>
-   </section> -->
-   <!--//New Arrivals -->
-   <!-- Product About -->
-   <!-- <section class="about py-lg-4 py-md-3 py-sm-3 py-3">
-      <div class="container py-lg-5 py-md-5 py-sm-4 py-3">
-         <?php
-         $ret = mysqli_query($con, "SELECT * FROM tblpage WHERE PageType='aboutus'");
-         while ($row = mysqli_fetch_array($ret)) {
-         ?>
-         <h3 class="title text-center mb-lg-5 mb-md-4 mb-sm-4 mb-3"><?php echo $row['PageTitle']; ?></h3>
-         <div class="about-products-w3layouts">
-            <p><?php echo $row['PageDescription']; ?></p>
-         </div>
-         <?php } ?>
-      </div>
-   </section> -->
-   <!--//Product About -->
-   <!-- Footer -->
+   
    <?php include_once('includes/footer.php'); ?>
-   <!-- //Footer -->
+
    <!-- JS Scripts -->
    <script src='js/jquery-2.2.3.min.js'></script>
    <!-- Cart JS -->
    <script src="js/minicart.js"></script>
    <script>
       toys.render();
-      
       toys.cart.on('toys_checkout', function (evt) {
          var items, len, i;
          if (this.subtotal() > 0) {
@@ -192,7 +102,7 @@ if(isset($_SESSION['user_id'])) {
          }
       });
    </script>
-   <!-- //Cart JS -->
+
    <!-- Responsive Slides -->
    <script src="js/responsiveslides.min.js"></script>
    <script>
@@ -212,14 +122,15 @@ if(isset($_SESSION['user_id'])) {
          });
       });
    </script>
-   <!-- //Responsive Slides -->
+
    <script src="js/bootstrap.min.js"></script>
    <script src="js/JiSlider.js"></script>
    <script>
       $(function () {
-         $('# JiSlider').JiSlider();
+         $('#JiSlider').JiSlider();
       });
    </script>
+
    <!-- FlexSlider -->
    <script src="js/jquery.flexisel.js"></script>
    <script>
@@ -233,21 +144,20 @@ if(isset($_SESSION['user_id'])) {
             enableResponsiveBreakpoints: true,
             responsiveBreakpoints: {
                portrait: {
-                  changePoint:480,
+                  changePoint: 480,
                   visibleItems: 1
                },
                landscape: {
-                  changePoint:640,
+                  changePoint: 640,
                   visibleItems: 2
                },
                tablet: {
-                  changePoint:768,
+                  changePoint: 768,
                   visibleItems: 3
                }
             }
          });
       });
    </script>
-   <!-- //FlexSlider -->
 </body>
 </html>
