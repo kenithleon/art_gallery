@@ -39,3 +39,35 @@ This system helps manage artworks, artists, customers, and gallery operations th
 ---
 
 ## 📂 **Project Structure**
+
+
+
+It contains all required tables for:
+- Admin  
+- Artists  
+- Customers  
+- Artworks  
+
+---
+
+## 📸 **Screenshots**
+
+### 1️⃣ Home Page  
+![Screenshot 1](screenshots/screen1.png)
+
+### 2️⃣ Admin Dashboard  
+![Screenshot 2](screenshots/screen2.png)
+
+### 3️⃣ Artist Panel  
+![Screenshot 3](screenshots/screen3.png)
+
+### 4️⃣ Artwork Listing  
+![Screenshot 4](screenshots/screen4.png)
+
+*(Upload your real screenshots in a `/screenshots/` folder for GitHub.)*
+
+---
+
+## ⚙️ **How to Run**
+1. Copy the project folder into  
+
